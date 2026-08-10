@@ -158,6 +158,10 @@ function buildTlsSettings(host: ResolvedProxyConfig): Record<string, unknown> {
         settings.verifyPeerCertByName = host.securityOptions.verifyPeerCertByName;
     }
 
+    if (host.securityOptions.cipherSuites) {
+        settings.cipherSuites = host.securityOptions.cipherSuites;
+    }
+
     if (host.securityOptions.echForceQuery) {
         settings.echForceQuery = host.securityOptions.echForceQuery;
     }

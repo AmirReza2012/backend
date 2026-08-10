@@ -271,6 +271,7 @@ model Hosts {
   vlessRouteId                 Int?     @map("vless_route_id")
   pinnedPeerCertSha256         String?  @map("pinned_peer_cert_sha256")
   verifyPeerCertByName         String?  @map("verify_peer_cert_by_name")
+  cipherSuites                 String?  @map("cipher_suites")
   shuffleHost                  Boolean  @default(false) @map("shuffle_host")
   mihomoX25519                 Boolean  @default(false) @map("mihomo_x25519")
   mihomoIpVersion              String?  @map("mihomo_ip_version") // ENUM: dual, ipv4, ipv6, ipv4-prefer, ipv6-prefer

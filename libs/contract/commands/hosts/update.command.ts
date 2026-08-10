@@ -65,6 +65,7 @@ export namespace UpdateHostCommand {
         vlessRouteId: z.optional(z.int().min(0).max(65535).nullable()),
         pinnedPeerCertSha256: z.string().nullish(),
         verifyPeerCertByName: z.string().nullish(),
+        cipherSuites: z.string().nullish(),
         shuffleHost: z.optional(z.boolean()),
         mihomoX25519: z.optional(z.boolean()),
         mihomoIpVersion: z.enum(MIHOMO_IP_VERSION).nullish(),

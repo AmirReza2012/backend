@@ -93,6 +93,7 @@ export const HysteriaTransportOptionsSchema = z.object({
 export const TlsSecurityOptionsSchema = z.object({
     pinnedPeerCertSha256: z.string().nullable(),
     verifyPeerCertByName: z.string().nullable(),
+    cipherSuites: z.string().nullable(),
     alpn: z.string().nullable(),
     enableSessionResumption: z.boolean(),
     fingerprint: z.string().nullable(),

@@ -61,6 +61,7 @@ export namespace CreateHostCommand {
         keepSniBlank: z.optional(z.boolean().default(false)),
         pinnedPeerCertSha256: z.string().nullish(),
         verifyPeerCertByName: z.string().nullish(),
+        cipherSuites: z.string().nullish(),
         vlessRouteId: z.int().min(0).max(65535).nullish(),
         shuffleHost: z.optional(z.boolean().default(false)),
         mihomoX25519: z.optional(z.boolean().default(false)),
